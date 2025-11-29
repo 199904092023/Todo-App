@@ -1,0 +1,59 @@
+###############################
+# FRONTEND (React)
+###############################
+
+# node modules
+React_1_Todo/node_modules/
+
+# build output
+React_1_Todo/dist/
+React_1_Todo/build/
+
+# env files (sensitive)
+React_1_Todo/.env
+React_1_Todo/.env.local
+React_1_Todo/.env.*.local
+
+
+###############################
+# BACKEND (Spring Boot)
+###############################
+
+# Maven target folder
+TodoAppBackend/target/
+
+# IntelliJ + project-specific files
+TodoAppBackend/*.iml
+TodoAppBackend/.idea/
+TodoAppBackend/.classpath
+TodoAppBackend/.project
+TodoAppBackend/.settings/
+
+# Logs
+TodoAppBackend/*.log
+
+# Sensitive backend config
+TodoAppBackend/src/main/resources/application.properties
+TodoAppBackend/src/main/resources/application.yml
+
+# Ignore DB files if any
+*.mv.db
+*.h2.db
+
+
+###############################
+# GLOBAL IGNORE FOR BOTH
+###############################
+
+# IntelliJ project files
+.idea/
+*.iml
+*.iws
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.cache
