@@ -17,16 +17,16 @@ public class Todo {
 
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
-    private  Long Id;
+    private  Long id;
 
-    @Column ( nullable = false,length = 10)
+    @Column ( nullable = false,length = 20)
     private String title;
 
     @Column ( nullable = false,length = 100)
     private  String description;
 
     @Column(nullable = false)
-    private boolean isCompleted = false;
+    private boolean completed = false;
 
     @Column ( nullable = false)
     private LocalDateTime createdDate;

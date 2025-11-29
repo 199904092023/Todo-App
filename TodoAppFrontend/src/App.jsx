@@ -1,24 +1,21 @@
-import { useEffect, useState } from "react"
-import { Todo } from "./component/Todo";
-import axios from 'axios';
-
+import AllTodos from "./component/AllTodos";
+import Banner from "./component/Banner";
+import CreateTodo from "./component/CreateTodo";
+import Footer from "./component/Footer";
+import Home from "./component/Home";
+import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
 
 function App() {
-   const [todos, settodos] = useState([]);
-
-    useEffect(()=>{
-      //mocking api calls for todo
-       axios.get(`${baseURL}/all`).then(async (response)=>{
-            const data= await response.data;
-            settodos(data);
-       })
-
-    },[])
-
   return (
-    <>
-     {todos.map((todo)=> <Todo key={todo.id} title={todo.title} description={todo.description}/>)}
-    </>
+    <Router>
+            <Banner></Banner>
+        <Routes>
+            <Route path="/" element={<Home></Home>}/>
+            <Route path="/create" element={<CreateTodo></CreateTodo>}/>
+            <Route path="/all" element={<AllTodos></AllTodos>}/>
+        </Routes>
+            <Footer></Footer>
+    </Router>
   )
 }
 

@@ -34,4 +34,14 @@ public class TodoServiceImpl implements  TodoService{
     public List<TodoResponseDTO> getAllTodos() {
         return todoRepository.findAll().stream().map(todo ->  mapperService.mapTo(todo, TodoResponseDTO.class)).collect(Collectors.toList());
     }
+
+    @Override
+    public TodoResponseDTO markAsComplete(Long id) {
+        Todo todoFrmDB=todoRepository.findById(id).orElseThrow(() -> new RuntimeException("Todo not found"));
+        todoFrmDB.setUpdatedDate(LocalDateTime.now());
+        todoFrmDB.setCompleted(true);
+
+        Todo savedTodo=todoRepository.save(todoFrmDB);
+        return mapperService.mapTo(savedTodo,TodoResponseDTO.class);
+    }
 }

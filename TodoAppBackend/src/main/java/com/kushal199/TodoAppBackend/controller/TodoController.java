@@ -29,4 +29,9 @@ public class TodoController {
         return ResponseEntity.ok(list);
     }
 
+    @PatchMapping ("/complete/{id}")
+    public ResponseEntity<TodoResponseDTO> markAsComplete(@Valid @PathVariable Long id){
+        return ResponseEntity.status(200).body(todoService.markAsComplete(id));
+    }
+
 }
