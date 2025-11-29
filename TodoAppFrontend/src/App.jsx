@@ -1,23 +1,17 @@
 import { useEffect, useState } from "react"
 import { Todo } from "./component/Todo";
+import axios from 'axios';
+
 
 function App() {
    const [todos, settodos] = useState([]);
 
-
     useEffect(()=>{
       //mocking api calls for todo
-      setTimeout(() => {
-        settodos([...todos,{
-      id:1,
-      title:"hello from 1",
-      description:"desc 1"
-    },{
-      id:2,
-      title:"hello from 2",
-      description:"desc 2"
-    }])
-    }, 2000)
+       axios.get(`${baseURL}/all`).then(async (response)=>{
+            const data= await response.data;
+            settodos(data);
+       })
 
     },[])
 
@@ -28,4 +22,5 @@ function App() {
   )
 }
 
+export const baseURL="http://localhost:8080/api/todos";
 export default App
