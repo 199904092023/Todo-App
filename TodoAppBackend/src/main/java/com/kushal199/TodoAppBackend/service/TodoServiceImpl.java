@@ -9,6 +9,9 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.util.List;
+import java.util.stream.Collectors;
+
 @Service
 public class TodoServiceImpl implements  TodoService{
     private TodoRepository todoRepository;
@@ -25,5 +28,10 @@ public class TodoServiceImpl implements  TodoService{
         todo.setCreatedDate(LocalDateTime.now(ZoneId.of("Asia/Kolkata")));
         Todo savedTodo=todoRepository.save(todo);
         return mapperService.mapTo(savedTodo, TodoResponseDTO.class);
+    }
+
+    @Override
+    public List<TodoResponseDTO> getAllTodos() {
+        return todoRepository.findAll().stream().map(todo ->  mapperService.mapTo(todo, TodoResponseDTO.class)).collect(Collectors.toList());
     }
 }
